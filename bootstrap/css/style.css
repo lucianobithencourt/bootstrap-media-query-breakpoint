@@ -5,28 +5,49 @@
     font-weight: bold;
 }
 
-p,
-h2 {
-    border: 2px solid rgb(74, 1, 92);
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) { 
+    body {
+        background-color:blue;
+        color: white;
+        font-weight: bold;
+    }
+ }
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body {
+        background-color:rgb(119, 0, 255);
+        color: white;
+        font-weight: bold;
+    }
+ }
+
+/* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    body {
+        background-color:rgb(1, 184, 40);
+        color: white;
+        font-weight: bold;
+    }
+ }
+
+/* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    body {
+        background-color:rgb(255, 153, 0);
+        color: white;
+        font-weight: bold;
+    }
+ }
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) { 
+    body {
+    background-color:rgb(197, 25, 25);
+    color: white;
+    font-weight: bold;
+ }
+
 }
-
-
-
-#m-direita, #m-esquerda,#m-top,#m-bottom {
-    border: 2px solid rgb(77, 3, 248);
-    width:95vw;
-    margin:auto;
-    border-radius: 20px;
-}
-
-
-
-
-
-.display-4 {
-    color: purple;
-    height: 150px;
-    ;
-}
-
-
